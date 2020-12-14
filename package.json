@@ -1,0 +1,27 @@
+{
+  "name": "sfdc-swag-level-platform-events-demo",
+  "version": "1.0.0",
+  "description": "Demo publish and subscribe to platform events.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DouglasCAyers/sfdc-swag-level-platform-events-demo"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Doug Ayers",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "heroku": "^7.42.6",
+    "jsforce": "^1.8.0",
+    "path": "^0.12.7"
+  },
+  "keywords": [
+    "salesforce",
+    "platform-events"
+  ]
+}

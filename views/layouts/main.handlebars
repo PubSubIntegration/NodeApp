@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Flate Soccer Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--google fonts-->
+        <script src="/js/jquery-2.2.4.min.js"></script>
+        <script>$j = jQuery.noConflict();</script>
+        <!--google fonts-->
+<link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.min.js"></script>
+        <!--Calender -->
+  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
+  <script src="js/underscore-min.js"></script>
+  <script src= "js/moment-2.2.1.js"></script>
+  <script src="js/clndr.js"></script>
+  <script src="js/site.js"></script>
+
+    </head>
+
+    <body>
+
+        {{{body}}}
+
+    </body>
+<script>function updateUrl(url,key,value){
+      if(value!==undefined){
+        value = encodeURI(value);
+      }
+      var hashIndex = url.indexOf("#")|0;
+      if (hashIndex === -1) hashIndex = url.length|0;
+      var urls = url.substring(0, hashIndex).split('?');
+      var baseUrl = urls[0];
+      var parameters = '';
+      var outPara = {};
+      if(urls.length>1){
+          parameters = urls[1];
+      }
+      if(parameters!==''){
+        parameters = parameters.split('&');
+        for(k in parameters){
+          var keyVal = parameters[k];
+          keyVal = keyVal.split('=');
+          var ekey = keyVal[0];
+          var evalue = '';
+          if(keyVal.length>1){
+              evalue = keyVal[1];
+          }
+          outPara[ekey] = evalue;
+        }
+      }
+if(value!==undefined){
+        outPara[key] = value;
+      }else{
+        delete outPara[key];
+      }
+      parameters = [];
+      for(var k in outPara){
+        parameters.push(k + '=' + outPara[k]);
+      }
+
+      var finalUrl = baseUrl;
+
+      if(parameters.length>0){
+        finalUrl += '?' + parameters.join('&'); 
+      }
+
+      return finalUrl + url.substring(hashIndex); 
+  }
+  function updateUrl(url,key,value){
+      if(value!==undefined){
+        value = encodeURI(value);
+      }
+      var hashIndex = url.indexOf("#")|0;
+      if (hashIndex === -1) hashIndex = url.length|0;
+      var urls = url.substring(0, hashIndex).split('?');
+      var baseUrl = urls[0];
+      var parameters = '';
+      var outPara = {};
+      if(urls.length>1){
+          parameters = urls[1];
+      }
+      if(parameters!==''){
+        parameters = parameters.split('&');
+        for(k in parameters){
+          var keyVal = parameters[k];
+          keyVal = keyVal.split('=');
+          var ekey = keyVal[0];
+          var evalue = '';
+          if(keyVal.length>1){
+              evalue = keyVal[1];
+          }
+          outPara[ekey] = evalue;
+        }
+      }
+if(value!==undefined){
+        outPara[key] = value;
+      }else{
+        delete outPara[key];
+      }
+      parameters = [];
+      for(var k in outPara){
+        parameters.push(k + '=' + outPara[k]);
+      }
+
+      var finalUrl = baseUrl;
+
+      if(parameters.length>0){
+        finalUrl += '?' + parameters.join('&'); 
+      }
+
+      return finalUrl + url.substring(hashIndex); 
+  }
+function sendMessage(){
+
+                            
+    var inputMessage=document.getElementById("textid").value; 
+        var forceKing=document.getElementById("forceKing").value;
+
+    var TeamA=document.getElementById("TeamA").value;
+    var TeamB=document.getElementById("TeamB").value;
+
+        var TeamB=document.getElementById("TeamC").value;
+
+       
+
+        var accessToken=document.getElementById("accessToken").value;
+
+    var instanceUrl=document.getElementById("instanceUrl").value;
+    var version='48';
+
+    console.log(inputMessage);
+    var myURL="/publish?accessToken="+accessToken+"&instanceUrl="+instanceUrl;
+
+    console.log('myUrl ' +myURL);
+    myURL = updateUrl(myURL,'location',inputMessage);
+     myURL = updateUrl(myURL,'forceKing',forceKing);
+     myURL = updateUrl(myURL,'TeamA',TeamA);
+    myURL = updateUrl(myURL,'TeamB',TeamB);
+    myURL = updateUrl(myURL,'TeamC',TeamC);
+
+console.log('added location...' + myURL);
+location.href=myURL;
+   /* var xhr=new XMLHttpRequest();
+    xhr.open('POST','/publish');
+    xhr.setRequestHeader("Content-Type","application/json");
+    //xhr.send(JSON.stringify({"message":inputMessage,"accessToken":accessToken,"instanceUrl":instanceUrl,"version":version}));
+xhr.onreadystatechange=function(){
+    console.log(this.status);
+}*/
+
+}
+</script>
+
+</html>

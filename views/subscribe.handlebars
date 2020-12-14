@@ -1,0 +1,174 @@
+<div>
+    <h2>Subscribed to My Dev Events</h2>
+</div>
+ <input type ="text" id="textid" value="Testing"/><br/>
+<input type="hidden" id="accessToken" value="{{accessToken}}" />
+<input type="hidden" id="instanceUrl" value="{{instanceUrl}}" />
+
+<input type="hidden" id="version" value="{{version}}" />
+ <input type="button" value="Click Me!" onclick="sendMessage()"/>
+
+<div>
+    <a href="/publish?accessToken={{accessToken}}&instanceUrl={{instanceUrl}}&version={{version}}">Publish Event</a>
+</div>
+
+<!---header start here-->
+<h1>FPL Leader Board</h1>
+<div class="soccer">
+		<div class="header-top">
+			<div class="logo">
+				<a href="#"><img src="images/lfp.png"></a>
+			</div>
+			<div class="livers">
+				<div class="liver-pool-buttons">
+					<ul>
+						<li><a href="#">ForceKing</a></li>
+						
+					</ul>
+				</div>
+				<div class="search">
+					<div class="search-box">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"> </span>
+							</form>
+					   </div>
+					</div>
+					<div class="clear"> </div>
+					  <!-- search-scripts -->
+							<script src="js/classie.js"></script>
+							<script src="js/uisearch.js"></script>
+								<script>
+									new UISearch( document.getElementById( 'sb-search' ) );
+								</script>
+							<!-- //search-scripts -->
+				</div>
+			  <div class="clear"> </div>
+			</div>
+		  <div class="clear"> </div>
+		</div>
+   <!---->
+		<div class="header-bottom">
+	            <!----- tabs-box ---->
+		<div class="tabs-box">
+			<ul class="tabs-menu">
+				<li><a href="#tab1"><img src="images/menu.png" ></a></li>
+				<li><a href="#tab2"><img src="images/radio.png" ></a></li>
+				<li><a href="#tab3"><img src="images/calender.png" ></a></li>
+				<li><a href="#tab4"><img src="images/settings.png" ></a></li>
+			</ul>
+			<div class="clearfix"> </div>
+			<div class="tab-grids">
+				<div id="tab1" class="tab-grid">
+					<div class="soccer-items">
+					  <div class="main-box">
+							<div class="logo-names">
+								<div class="logo-name-1">
+								  <h2>Force King</h2>
+								</div>
+								
+							  <div class="clear"> </div>
+							</div>
+							<div class="awards">
+								<div class="ablam">
+									<img src="images/liver.png">
+								</div>
+								
+								<div class="troffy">
+									<img src="images/trofy.png">
+								</div>
+							  <div class="clear"> </div>
+							</div>
+							<!--<div class="game-scores">
+								<ul class="sport-scor">
+									<li><img src="images/ball.png"><a href="#">S.Gerrard 51'</a></li>
+									<li><img src="images/ball.png"><a href="#">D.Starridge 54,67'</a></li>
+								</ul>
+								<ul class="ronaldo">
+									<li><img src="images/dot.png"><a href="#">C.Ronaldo 11'</a></li>
+								</ul>
+							  <div class="clear"> </div>
+							</div> -->
+						  </div>
+					</div>
+				  <div class="clear"> </div>
+				</div>
+				<div id="tab2" class="tab-grid">
+					<div class="gallery">
+						<div class="portfolio-1">
+							<img src="images/g1.jpg" alt="">						
+						</div>
+						<div class="portfolio-1">
+							<img src="images/g2.jpg" alt="">					
+						</div>
+						<div class="portfolio-1">
+							<img src="images/g3.jpg" alt="">						
+						</div>
+						<div class="portfolio-1">
+							<img src="images/g4.jpg" alt="">							
+						</div>
+						<div class="portfolio-1">
+							<img src="images/g3.jpg" alt="">							
+						</div>
+						<div class="portfolio-1">
+							<img src="images/g1.jpg" alt="">						
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div id="tab3" class="tab-grid">
+					<div class="calend">
+						<div class="clear"> </div>
+						<div class="calen-img">
+						   <div class=" content-cal1">
+                              <!-- start calender  ---->
+								<div class="column_right_grid calender">
+			                      <div class="cal1"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div><div class="month">November 2013</div><div class="clndr-control-button rightalign"><p class="clndr-next-button">next</p></div></div><table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days"><td class="header-day">S</td><td class="header-day">M</td><td class="header-day">T</td><td class="header-day">W</td><td class="header-day">T</td><td class="header-day">F</td><td class="header-day">S</td></tr></thead><tbody><tr><td class="day past adjacent-month last-month calendar-day-2013-10-27"><div class="day-contents">27</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-28"><div class="day-contents">28</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-29"><div class="day-contents">29</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-30"><div class="day-contents">30</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-31"><div class="day-contents">31</div></td><td class="day past calendar-day-2013-11-01"><div class="day-contents">1</div></td><td class="day past calendar-day-2013-11-02"><div class="day-contents">2</div></td></tr><tr><td class="day past calendar-day-2013-11-03"><div class="day-contents">3</div></td><td class="day past calendar-day-2013-11-04"><div class="day-contents">4</div></td><td class="day past calendar-day-2013-11-05"><div class="day-contents">5</div></td><td class="day past calendar-day-2013-11-06"><div class="day-contents">6</div></td><td class="day past calendar-day-2013-11-07"><div class="day-contents">7</div></td><td class="day past calendar-day-2013-11-08"><div class="day-contents">8</div></td><td class="day past calendar-day-2013-11-09"><div class="day-contents">9</div></td></tr><tr><td class="day past event calendar-day-2013-11-10"><div class="day-contents">10</div></td><td class="day past event calendar-day-2013-11-11"><div class="day-contents">11</div></td><td class="day past event calendar-day-2013-11-12"><div class="day-contents">12</div></td><td class="day past event calendar-day-2013-11-13"><div class="day-contents">13</div></td><td class="day past event calendar-day-2013-11-14"><div class="day-contents">14</div></td><td class="day past calendar-day-2013-11-15"><div class="day-contents">15</div></td><td class="day past calendar-day-2013-11-16"><div class="day-contents">16</div></td></tr><tr><td class="day past calendar-day-2013-11-17"><div class="day-contents">17</div></td><td class="day past calendar-day-2013-11-18"><div class="day-contents">18</div></td><td class="day past calendar-day-2013-11-19"><div class="day-contents">19</div></td><td class="day past calendar-day-2013-11-20"><div class="day-contents">20</div></td><td class="day past event calendar-day-2013-11-21"><div class="day-contents">21</div></td><td class="day past event calendar-day-2013-11-22"><div class="day-contents">22</div></td><td class="day today event calendar-day-2013-11-23"><div class="day-contents">23</div></td></tr><tr><td class="day calendar-day-2013-11-24"><div class="day-contents">24</div></td><td class="day calendar-day-2013-11-25"><div class="day-contents">25</div></td><td class="day calendar-day-2013-11-26"><div class="day-contents">26</div></td><td class="day calendar-day-2013-11-27"><div class="day-contents">27</div></td><td class="day calendar-day-2013-11-28"><div class="day-contents">28</div></td><td class="day calendar-day-2013-11-29"><div class="day-contents">29</div></td><td class="day calendar-day-2013-11-30"><div class="day-contents">30</div></td></tr></tbody></table></div></div>
+								</div>
+						      <!-- end calender  ---->
+                           </div>
+						</div>
+					</div>
+				</div>
+				<div id="tab4" class="tab-grid">
+					 <div class="plater-names">
+					 	<h3>Name of the Team</h3>
+					 	<h5>Force King</h5>
+					 	<h5>Team A  -----</h5>
+					 	<h5>Team B -----</h5>
+					 	<h5>Team C -----</h5>
+					 	<h5><input type="button" value="Click Me!" onclick="sendMessage()"/></h5>
+					 </div>
+					 <div class="gradings">
+					 	<h3>Ratings</h3>
+					 	<h5><input type ="text" id="forceKing" value="10"/></h5>
+					 	<h5><input type ="text" id="TeamA" value="10"/></h5>
+					 	<h5><input type ="text" id="TeamB" value="10"/></h5>
+					        <h5><input type ="text" id="TeamC" value="10"/></h5>
+
+					 </div>
+				  <div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!----- tabs-box ---->
+		<!----- Comman-js-files ----->
+		<script>
+			$(document).ready(function() {
+				$("#tab2").hide();
+				$("#tab3").hide();
+				$("#tab4").hide();
+				$(".tabs-menu a").click(function(event){
+					event.preventDefault();
+					var tab=$(this).attr("href");
+					$(".tab-grid").not(tab).css("display","none");
+					$(tab).fadeIn("slow");
+				});
+			});
+		</script>
+		<!----- Comman-js-files ----->
+        </div>
+</div>
+<div class="clear"> </div>
